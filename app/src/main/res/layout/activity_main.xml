@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".MainActivity"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                style="@style/MainItem"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MainItemText"
+                    android:text="材料"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    style="@style/MainItemEdit"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MainItem"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MainItemText"
+                    android:text="板子层数"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    style="@style/MainItemEdit"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MainItem"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MainItemText"
+                    android:text="尺寸(mm)"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    style="@style/MainItemEdit"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MainItem"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MainItemText"
+                    android:text="TG(℃)"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    style="@style/MainItemEdit"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MainItem"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MainItemText"
+                    android:text="数量(pcs)"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    style="@style/MainItemEdit"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MainItem"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MainItemText"
+                    android:text="板厚"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    style="@style/MainItemEdit"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MainItem"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MainItemText"
+                    android:text="外层铜厚"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    style="@style/MainItemEdit"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MainItem"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MainItemText"
+                    android:text="表面处理"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    style="@style/MainItemEdit"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MainItem"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MainItemText"
+                    android:text="沉金面积"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    style="@style/MainItemEdit"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MainItem"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MainItemText"
+                    android:text="沉金厚度"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    style="@style/MainItemEdit"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MainItem"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MainItemText"
+                    android:text="利用率"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    style="@style/MainItemEdit"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MainItem"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MainItemText"
+                    android:text="锣长(m/㎡)"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    style="@style/MainItemEdit"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MainItem"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MainItemText"
+                    android:text="检验标准"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    style="@style/MainItemEdit"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MainItem"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MainItemText"
+                    android:text="阻焊颜色"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    style="@style/MainItemEdit"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MainItem"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MainItemText"
+                    android:text="字符颜色"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    style="@style/MainItemEdit"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MainItem"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MainItemText"
+                    android:text="最小孔铜厚度"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    style="@style/MainItemEdit"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MainItem"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MainItemText"
+                    android:text="机械孔数"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    style="@style/MainItemEdit"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MainItem"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MainItemText"
+                    android:text="激光孔数"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    style="@style/MainItemEdit"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MainItem"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MainItemText"
+                    android:text="阻抗板"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    style="@style/MainItemEdit"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MainItem"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MainItemText"
+                    android:text="碳油板"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    style="@style/MainItemEdit"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MainItem"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MainItemText"
+                    android:text="叉板"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    style="@style/MainItemEdit"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MainItem"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MainItemText"
+                    android:text="PP数量"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    style="@style/MainItemEdit"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MainItem"
+                android:orientation="horizontal"
+                android:layout_marginBottom="70dp">
+
+                <TextView
+                    style="@style/MainItemText"
+                    android:text="HDI(盲埋孔)"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    style="@style/MainItemEdit"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:text="确定"
+        android:id="@+id/confirm"/>
+
+</FrameLayout>
