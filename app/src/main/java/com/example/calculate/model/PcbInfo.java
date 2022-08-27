@@ -3,7 +3,7 @@ package com.example.calculate.data;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-public class Info implements Parcelable {
+public class PcbInfo implements Parcelable {
     String test;
 
     public String getTest() {
@@ -14,17 +14,17 @@ public class Info implements Parcelable {
         this.test = test;
     }
 
-    public static final Creator<Info> CREATOR = new Creator<Info>() {
+    public static final Creator<PcbInfo> CREATOR = new Creator<PcbInfo>() {
         @Override
-        public Info createFromParcel(Parcel in) {
-            Info info = new Info();
-            info.test = in.readString();
-            return info;
+        public PcbInfo createFromParcel(Parcel in) {
+            PcbInfo pcbInfo = new PcbInfo();
+            pcbInfo.test = in.readString();
+            return pcbInfo;
         }
 
         @Override
-        public Info[] newArray(int size) {
-            return new Info[size];
+        public PcbInfo[] newArray(int size) {
+            return new PcbInfo[size];
         }
     };
 
